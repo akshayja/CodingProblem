@@ -1,0 +1,8 @@
+
+annonymous inner class
+
+
+http://www.javatpoint.com/anonymous-inner-class
+http://www.programmerinterview.com/index.php/java-questions/java-anonymous-class-example/              best
+http://cs-fundamentals.com/java-programming/java-anonymous-inner-classes.php
+anonymous inner type using thread

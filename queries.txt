@@ -1,0 +1,11 @@
+Queries
+
+Exception handling using AOP
+
+Consider I have 10 spring mvc controllers in my project. Each controller has minimum 4 CRUD operations. Each controller is associated with DAO Layer.
+Now I want to apply excpetion mechanism using AOP. When an error comes I should be able to handle it and show the custom error message to client (i.e on JSP).
+Can you please share any such example where you have used AOP?
+
+
+
+

@@ -1,0 +1,112 @@
+						 What is a Lambda Expression ?
+
+Definition
+
+	A lambda expression represents an anonymous method. A method without name.
+
+How to use ?
+
+Syntax
+	A lambda expression is characterized by the following syntax -
+	Argument List				Arrow Token		Body
+	______________________________________________________________________________
+	(parameter) 				 -> 	 	 { expression body }
+	______________________________________________________________________________
+	
+
+	It comprises of a set of parameters, a lambda operator (->) and a function body.
+
+-----------------------------------------------------------------------------------------
+Structure of Lambda expression :
+
+Lambda expression syntax can be divided into three parts.
+1. Arrow (->) token
+2. Argument List :
+		
+		A lambda expression can contain zero or more arguments.
+
+		// No argument.
+		() -> { System.out.println("No argument"); }
+	
+		// Single argument.
+		(int arg) -> { System.out.println("Single integer argument : " + arg); }
+
+		// More than one arguments.
+		( int arg1, String arg2 ) -> { System.out.println("Two arguments : " + arg1 + " and " + arg2); }
+		
+You can eliminate the argument type while passing it to lambda expressions, 
+those are inferred types. i.e. ( int a ) and ( a ) both are same.
+
+More than one arguments are separated by comma (,) operator.
+
+You can also eliminate “()” if there is only argument to avoid Horizontal Problem.
+( arg ) -> {...} can be written as arg -> {...}
+You can not use inferred and declared types together, Following is invalid.
+
+Example :
+( int arg1, arg2 ) // This is invalid
+
+3. Body of a lambda expression :
+	Body can be a single expression or a statement block.
+	If a body contains only single expression than expression will be simply evaluated and returned.
+
+	() -> System.out.println("No argument");
+
+
+	If a body is statement of block, than it will be evaluated same as a method body, 
+	that will be called and a hidden return statement at the end block that will return control to caller
+	 after execution of block.
+	 So, branching statements ( continue and break ) are illegal and return is not necessary to write.
+	
+  () -> {
+      System.out.println("Bad lambda");
+      break ; // this statement is not allowed here.
+   }
+
+-----------------------------------------------------------------------------------------
+
+Following are the important characteristics of a lambda expression -
+
+Optional type declaration - 
+	No need to declare the type of a parameter. 
+	The compiler can inference the same from the value of the parameter.
+
+Optional parenthesis around parameter - 
+	No need to declare a single parameter in parenthesis. 
+	For multiple parameters, parentheses are required.
+
+Optional curly braces - 
+	No need to use curly braces in expression body if the body contains a single statement.
+
+Optional return keyword - 
+	The compiler automatically returns the value if the body has a single expression to return the value.
+	 Curly braces are required to indicate that expression returns a value.
+
+-----------------------------------------------------------------------------------------
+The following are examples of Java lambda expressions:
+
+n -> n % 2 != 0;
+(char c) -> c == 'y';
+(x, y) -> x + y;
+(int a, int b) -> a * a + b * b;
+() -> 42
+() -> { return 3.14 };
+(String s) -> { System.out.println(s); };
+() -> { System.out.println("Hello World!"); };
+
+------------------------------------------------------------------------------------------
+Interpretation of Examples
+
+Given a number n returns a boolean indicating if it is odd.
+Given a character c returns a boolean indicating if it is equal to ‘y’.
+Given two numbers x and y returns another number with their summation.
+Given two integers a and b returns another integer with the sum of their squares.
+Given no parameters returns the integer 42.
+Given no parameters returns the double 3.14.
+Given a string s prints the string to the main output and returns void.
+Give no parameters prints Hello World! to the main output and returns void.
+
+------------------------------------------------------------------------------------------
+
+
+

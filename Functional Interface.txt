@@ -1,0 +1,19 @@
+Functional Interfaces
+
+The code that defines the ActionListener interface, looks something like this:
+
+   1 package java.awt.event;
+   2 import java.util.EventListener;
+   3 
+   4 public interface ActionListener extends EventListener {
+   5     
+   6 public void actionPerformed(ActionEvent e);
+   7 
+   8 }
+The ActionListener example is an interface with only one method. With Java SE 8, an interface that follows this pattern is known as a "functional interface."
+
+Note: This type of interface, was previously known as a Single Abstract Method type (SAM).
+
+Using functional interfaces with anonymous inner classes are a common pattern in Java. 
+In addition to the EventListener classes, interfaces like Runnable and Comparator are used in a similar manner.
+ Therefore, functional interfaces are leveraged for use with lambda expressions.

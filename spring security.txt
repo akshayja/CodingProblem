@@ -1,0 +1,17 @@
+http://www.java2s.com/Open-Source/Java_Free_Code/Spring_Security/Download_spring_security_javaconfig_Free_Java_Code.htm
+http://outbottle.com/spring-3-security-custom-login-form-with-remember-me/
+http://www.concretepage.com/spring/spring-security/remember-me-in-spring-security-example
+http://blogrit.com/blog/Spring_MVC_-_Spring_Security_Remember_Me_-_Persistent_Token_Approach
+https://disqus.com/home/discussion/mkyong/spring_security_remember_me_example/
+
+
+http://www.mkyong.com/spring-security/spring-security-remember-me-example/
+
+https://github.com/spring-projects/spring-security-javaconfig/commit/91a670a47dcc5e6f8ff68862d0f7cc667de082e8
+
+http://iswwwup.com/t/42f22d3ffb20/spring-security-java-config-remember-me-by-java-config.html
+
+http://devjav.com/spring-security-remember/
+
+
+http://docs.spring.io/spring-security/site/migrate/current/3-to-4/html5/migrate-3-to-4-xml.html#m3to4-deprecations-config
