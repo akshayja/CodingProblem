@@ -1,0 +1,32 @@
+public File getFileFromResource(String fileName) throws URISyntaxException {
+        ClassLoader classLoader = getClass().getClassLoader();
+        URL resource = classLoader.getResource(fileName);
+        if (resource == null) {
+            throw new IllegalArgumentException("file not found! " + fileName);
+        } else {
+            return new File(resource.toURI());
+        }
+    }
+
+    private String getData(File file) {
+        String data = null;
+        try {
+            data = Files.readString(file.toPath(), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return data;
+    }
+
+    /**
+     * Read file and return data
+     * @param fileName
+     * @return data
+     * @throws URISyntaxException
+     */
+    public String getEventMessage(String fileName) throws URISyntaxException {
+        FileResourceUtils fileResourcesUtils = new FileResourceUtils();
+        File file = fileResourcesUtils.getFileFromResource(fileName);
+        String reserveVehicleEventMessage = fileResourcesUtils.getData(file);
+        return reserveVehicleEventMessage;
+    }
